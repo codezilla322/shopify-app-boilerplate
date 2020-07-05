@@ -1,0 +1,53 @@
+{
+  "name": "sales_team",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shopify app for the sales team",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "keywords": [
+    "shopify",
+    "app",
+    "sale",
+    "commission",
+    "representative"
+  ],
+  "author": "Olga Potapenko",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^9.1.0",
+    "@shopify/app-bridge-react": "^1.24.0",
+    "@shopify/koa-shopify-auth": "^3.1.64",
+    "@shopify/koa-shopify-graphql-proxy": "^4.0.1",
+    "@shopify/koa-shopify-webhooks": "^2.4.3",
+    "@shopify/polaris": "^4.26.1",
+    "@zeit/next-css": "^1.0.1",
+    "apollo-boost": "^0.4.9",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.2.0",
+    "isomorphic-fetch": "^2.2.1",
+    "js-cookie": "^2.2.1",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.1.0",
+    "koa-session": "^6.0.0",
+    "koa-static": "^5.0.0",
+    "module-alias": "^2.2.2",
+    "mysql": "^2.18.1",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^16.13.1"
+  },
+  "_moduleAliases": {
+    "@libs": "app/libs",
+    "@routes": "app/routes",
+    "@models": "app/models"
+  }
+}
