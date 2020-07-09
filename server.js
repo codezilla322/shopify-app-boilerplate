@@ -70,8 +70,8 @@ app.prepare().then(() => {
         }
 
         console.log('> Authenticated: ' + shop + ' - ' + accessToken);
-        const { addShop } = require('@models/shops');
-        addShop(shop, accessToken);
+        const shopModel = require('@models/shops');
+        shopModel.addShop(shop, accessToken);
         ctx.redirect('https://'+shop+'/admin/apps');
       },
     }),
