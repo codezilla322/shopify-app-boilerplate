@@ -2,7 +2,7 @@ const basefunc = require('@libs/basefunc');
 
 module.exports = {
   addShop: function(shop, accessToken) {
-    this.findByName(shop)
+    this.findShopByName(shop)
       .then((shopData) => {
         if(shopData) {
           this.updateShop(shop, accessToken);
@@ -23,7 +23,7 @@ module.exports = {
         });
       });
   },
-  findByName: function(shop) {
+  findShopByName: function(shop) {
     var query = "SELECT * FROM shops WHERE shop_origin = ?";
     return new Promise(function(resolve, reject) {
       db.query(query, shop, function(err, result) {
