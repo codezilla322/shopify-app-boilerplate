@@ -37,7 +37,7 @@
     "koa-static": "^5.0.0",
     "module-alias": "^2.2.2",
     "mysql": "^2.18.1",
-    "next": "^9.4.4",
+    "next": "^13.0.3",
     "react": "^16.13.1",
     "react-apollo": "^3.1.5",
     "react-dom": "^16.13.1"
